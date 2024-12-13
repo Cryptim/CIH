@@ -1,0 +1,198 @@
+.workshops-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #1e2a38;
+  color: #fff;
+  width: 100%;
+}
+.workshops-section-container {
+  margin: 0 180px;
+
+  gap: 1.5rem;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.3125rem;
+}
+.workshops-section h2 {
+  display: flex;
+}
+.workshops-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.workshop-card {
+  background-color: transparent;
+  color: white;
+  min-width: 300px;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  padding-right: 36px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+.workshop-card h3 {
+  font-family: Cascadia Code;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: left;
+}
+.workshop-card p {
+  font-family: Cascadia Code;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+  color: #ffffff;
+}
+.workshop-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.workshop-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.workshop-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.whiteArrow a {
+  display: flex;
+  align-items: center;
+  font-family: Cascadia Code;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27.2px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin-top: 62px;
+  margin-bottom: 103px;
+}
+.whiteArrow img {
+  display: flex;
+  align-items: center;
+}
+/* Responsive Design */
+/* Base styles remain unchanged */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .workshops-section-container {
+    margin: 0 80px;
+  }
+  .workshop-card h3 {
+    font-size: 22px;
+  }
+  .workshop-card p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .workshops-section-container {
+    margin: 0 50px;
+  }
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .workshop-card {
+    min-width: 260px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .workshops-section {
+    padding: 1.5rem;
+  }
+  .workshops-section-container {
+    margin: 0 30px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .workshop-card {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+  .workshop-card h3 {
+    font-size: 20px;
+  }
+  .workshop-card p {
+    font-size: 16px;
+  }
+  .whiteArrow a {
+    font-size: 16px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .workshops-section-container {
+    margin: 0 15px;
+  }
+  .workshops-section h2 {
+    font-size: 1.75rem;
+  }
+  .workshop-card h3 {
+    font-size: 18px;
+  }
+  .workshop-card p {
+    font-size: 14px;
+  }
+  .whiteArrow a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .workshops-section {
+    padding: 1rem;
+  }
+  .workshops-section h2 {
+    font-size: 1.5rem;
+  }
+  .workshop-card {
+    padding: 0;
+  }
+  .workshop-card h3 {
+    font-size: 16px;
+  }
+  .workshop-card p {
+    font-size: 12px;
+  }
+  .whiteArrow a {
+    font-size: 12px;
+  }
+}

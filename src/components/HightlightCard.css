@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Highlight Section */
+.highlight-card {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 20px; /* Add padding for smaller screens */
+}
+
+/* Profile Card */
+.profile-card {
+
+  display: flex;
+  flex-direction: row; /* Default horizontal layout */
+  background-color: #eae6dd;
+  border-radius: 15px;
+  margin: 0 180px; /* Reduce margin for smaller screens */
+  height: auto; /* Allow height to adjust for content */
+  max-width: 1200px; /* Set a max width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+}
+
+.profile-image {
+
+  display: flex;
+  margin: auto 0;
+  margin-left: 40px; /* Adjust margin for smaller screens */
+}
+
+.profile-image img {
+  width: 298px;
+  height: 322px;
+  border-radius: 500px;
+  background-color: #a7cab7;
+  border: 1px dashed #0c6a38;
+}
+
+/* Profile Details */
+.profile-details {
+  margin: 64px 80px; /* Adjust margin for smaller screens */
+
+  flex-grow: 1;
+}
+
+.profile-badge {
+  background-color: #a7cab7;
+  max-width: 210px;
+  height: 44px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-family: Cascadia Code;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.profile-details h2 {
+  font-family: Cascadia Code;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: left;
+  color: #3d4f60;
+  margin-bottom: 16px;
+}
+
+.profile-details p {
+  font-family: Cascadia Code;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+  max-width: 100%; /* Allow paragraph width to adjust */
+  height: auto; /* Allow height to adjust */
+}
+
+.profile-link {
+  display: flex;
+  color: #149d59;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profile-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .profile-card {
+    flex-direction: column; /* Stack image and details vertically */
+    align-items: center;
+    margin: 0 10px; /* Reduce side margins */
+  }
+
+  .profile-image {
+    margin: 20px 0; /* Center image with margin */
+  }
+
+  .profile-image img {
+    width: 220px; /* Scale down image */
+    height: 220px;
+  }
+
+  .profile-details {
+    margin: 20px; /* Adjust details margin */
+    text-align: center; /* Center-align text */
+  }
+
+  .profile-details p {
+    font-size: 18px; /* Adjust font size */
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    margin: 0 5px; /* Further reduce margins */
+  }
+
+  .profile-details h2 {
+    font-size: 20px; /* Adjust heading size */
+  }
+
+  .profile-details p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+
+  .profile-badge {
+    font-size: 14px; /* Adjust badge font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image img {
+    width: 150px; /* Further scale down image */
+    height: 150px;
+  }
+
+  .profile-details p {
+    font-size: 14px; /* Reduce paragraph font size */
+  }
+
+  .profile-link {
+    font-size: 14px; /* Adjust link font size */
+  }
+}

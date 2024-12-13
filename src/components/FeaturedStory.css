@@ -1,0 +1,179 @@
+.featuredStoryContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #eae6dd;
+  margin: 0 180px; /* Center align for all screens */
+  border-radius: 24px;
+  max-width: 1200px; /* Limit container width for larger screens */
+}
+
+.featuredStoryImage {
+  object-fit: contain;
+  margin: 64px 0; /* Vertical margin */
+  margin-left: 80px; /* Adjust margin for spacing */
+}
+
+.featuredStory {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Allow the text container to adjust dynamically */
+  margin: 76px 80px; /* Adjust spacing */
+  gap: 16px;
+}
+
+.featuredStoryText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Make it responsive */
+  max-width: 411px; /* Limit width for larger screens */
+  height: 44px;
+  border-radius: 12px;
+  background-color: #a7cab7;
+}
+
+.featuredStoryName {
+  display: flex;
+  font-family: Cascadia Code;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #3d4f60;
+}
+
+.featuredStoryParagraph {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-family: Cascadia Code;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.featuredStoryMore {
+  display: flex;
+  margin-top: auto;
+}
+
+.morefeatured {
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* Remove background color */
+  color: #0c6a38;
+  font-family: Cascadia Code;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.morefeatured:hover {
+  background-color: #d5e8d4; /* Light green hover effect */
+  border-radius: 12px;
+}
+
+.arrow-icon {
+  margin-left: 10px;
+  width: 18px; /* Adjust size of the arrow */
+  height: auto;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet Devices */
+@media (max-width: 1024px) {
+  .featuredStoryContainer {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Adjust padding */
+    margin: 0 10px; /* Reduce horizontal margins */
+  }
+
+  .featuredStoryImage {
+    width: 120px; /* Adjust image size */
+    margin: 0 auto; /* Center image */
+  }
+
+  .featuredStory {
+    margin: 20px 0; /* Reduce vertical margins */
+  }
+
+  .featuredStoryText {
+    width: 100%; /* Make the text container responsive */
+    max-width: 300px; /* Adjust for smaller screens */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .featuredStoryParagraph {
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .featuredStoryContainer {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Adjust padding */
+    margin: 0 5px; /* Reduce horizontal margins */
+  }
+
+  .featuredStoryImage {
+    width: 100px; /* Adjust image size for smaller screens */
+    margin: 0 auto; /* Center image */
+  }
+
+  .featuredStory {
+    margin: 10px 0; /* Reduce vertical margins */
+  }
+
+  .featuredStoryText {
+    width: 100%; /* Make the text container responsive */
+    max-width: 250px; /* Adjust for smaller screens */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .featuredStoryName {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .featuredStoryParagraph {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .morefeatured {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .featuredStoryContainer {
+    margin: 0 10px; /* Further reduce margins for very small screens */
+  }
+
+  .featuredStoryImage {
+    width: 80px; /* Adjust image size for very small screens */
+  }
+
+  .featuredStoryText {
+    width: 100%; /* Ensure the text container takes up full width */
+    max-width: 200px; /* Adjust for very small screens */
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .featuredStoryName {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .featuredStoryParagraph {
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .morefeatured {
+    font-size: 14px; /* Reduce font size */
+  }
+}

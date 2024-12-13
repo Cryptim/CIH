@@ -1,0 +1,266 @@
+.hero-section {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start; /* Align items to the top */
+  background-color: #fff;
+  padding: 0 180px;
+
+  margin-top: -40px;
+  padding-top: 160px;
+  padding-bottom: 125px;
+  flex-wrap: wrap; /* Allow the text and image to wrap on smaller screens */
+  gap: 78px; /* Add a 78px gap between the red containers */
+}
+
+.text-container {
+  min-height: 183px;
+  max-width: 50%;
+  text-align: left; /* Ensure text starts from the left */
+}
+
+.text-container h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.text-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.text-container button {
+  padding: 10px 20px;
+  background-color: #3b3b3b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.image-container {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  max-width: 50%;
+}
+
+.image-container img {
+  height: auto;
+  max-width: 100%; /* Ensure the image resizes proportionally */
+}
+
+.action-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.mentor-button,
+.resources-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.mentor-button {
+  background-color: #3d4f60;
+  color: white;
+  border: none;
+}
+
+.mentor-button:hover {
+  background-color: #283a4a;
+  color: #0056b3;
+}
+
+.resources-button {
+  background-color: transparent;
+  color: #3d4f60;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resources-button:hover {
+  background-color: #0056b3;
+}
+
+.tag {
+  position: absolute;
+  padding: 5px 10px;
+  font-size: 18.26px;
+  background-color: #f0f0f0;
+  border-radius: 10.95px;
+  font-weight: 300;
+  width: 168.26px;
+  text-align: center;
+  height: 48.73px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tag:hover {
+  transform: scale(1.1); /* Hover effect for all tags */
+}
+
+.tag-collaborations {
+  left: 20%;
+  top: 0%;
+  color: #8f6e23;
+  background: #eae6dd;
+  border: 0.5px #c6af7b solid;
+  transform: rotate(-5.21deg);
+}
+
+.tag-volunteerism {
+  left: 0%;
+  top: 35%;
+  background: #add1fb;
+  border: 0.5px #1d71d5 solid;
+}
+
+.tag-mentorship {
+  left: 60%;
+  top: 30%;
+  background: #d1c4df;
+  border: 0.5px #5b4377 solid;
+}
+
+.tag-empowerment {
+  left: 60%;
+  top: 60%;
+  background: #add1fb;
+  border: 0.5px #1967c3 solid;
+}
+
+.tag-free-resources {
+  left: 0%;
+  top: 75%;
+  background: #d1c4df;
+  border: 0.5px #5b4377 solid;
+}
+
+.tag-partnership {
+  left: 45%;
+  top: 90%;
+  transform: rotate(4deg);
+  background: #c5e0d2;
+  border: 0.5px #0c6a38 solid;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .text-container {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .image-container {
+    position: relative; /* Ensure tags are positioned relative to this container */
+    display: inline-block;
+  }
+
+  .image-container img {
+    width: 70%;
+    height: auto;
+  }
+
+  .tag {
+    position: absolute;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .tag:hover {
+    transform: scale(1.1);
+  }
+
+  .tag-collaborations {
+    top: 10%; /* Adjust percentages to match the screenshot layout */
+    left: 15%;
+    background: #eae6dd;
+    border: 1px solid #c6af7b;
+    color: #8f6e23;
+  }
+
+  .tag-volunteerism {
+    top: 35%;
+    left: 5%;
+    background: #1f5088;
+    border: 1px solid #1d71d5;
+    color: #1d71d5;
+  }
+
+  .tag-mentorship {
+    top: 28%;
+    left: 0%;
+    background: #d1c4df;
+    border: 1px solid #5b4377;
+    color: #5b4377;
+  }
+
+  .tag-empowerment {
+    top: 58%;
+    left: 0%;
+    background: #add1fb;
+    border: 1px solid #1967c3;
+    color: #1967c3;
+  }
+
+  .tag-free-resources {
+    top: 75%;
+    left: 10%;
+    background: #d1c4df;
+    border: 1px solid #5b4377;
+    color: #5b4377;
+  }
+
+  .tag-partnership {
+    top: 82%;
+    left: 45%;
+    background: #c5e0d2;
+    border: 1px solid #0c6a38;
+    color: #0c6a38;
+    transform: rotate(4deg);
+  }
+
+  @media (max-width: 768px) {
+    .tag {
+      font-size: 12px;
+      padding: 4px 8px;
+      width: auto;
+      height: auto;
+      transform: none; /* Avoid rotation for smaller screens */
+    }
+
+    .tag-collaborations,
+    .tag-volunteerism,
+    .tag-mentorship,
+    .tag-empowerment,
+    .tag-free-resources,
+    .tag-partnership {
+      position: relative; /* Stack tags in the middle for mobile screens */
+      margin: 8px auto;
+    }
+  }
+}

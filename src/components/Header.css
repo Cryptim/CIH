@@ -1,0 +1,129 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 16px 180px; /* Add 180px padding on left and right */
+  border-bottom: 1px solid #ddd;
+  position: fixed; /* Keeps header fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for visibility */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+.logo img {
+  max-width: 120px; /* Ensure the logo scales properly */
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li {
+  margin: 0 1rem;
+  position: relative; /* For dropdown menu positioning */
+}
+
+.nav-menu a {
+  text-decoration: none; /* Removes underline from links */
+  color: #2e2e2e; /* Default link color */
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav-menu a:hover {
+  color: #0056b3; /* Hover color */
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-arrow {
+  margin-left: 0.5rem; /* Spacing for dropdown arrow */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Positioned below the dropdown toggle */
+  left: 0; /* Aligns to the left */
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.dropdown-menu li a {
+  text-decoration: none; /* Removes underline */
+  color: #333;
+}
+
+.dropdown-menu li a:hover {
+  color: #0056b3; /* Hover color */
+}
+
+.donate-button {
+  background-color: #3d4f60;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.donate-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .header {
+    padding: 12px 5%; /* Adjust padding for medium screens */
+  }
+  .donate-button {
+    font-size: 14px; /* Reduce button font size */
+    padding: 0.4rem 0.8rem; /* Adjust padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    text-align: center;
+  }
+  .donate-button {
+    margin-top: 1rem; /* Add space above the button */
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-button {
+    font-size: 12px; /* Smaller button text */
+    padding: 0.3rem 0.6rem; /* Adjust padding */
+  }
+}

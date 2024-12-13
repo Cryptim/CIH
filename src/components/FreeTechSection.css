@@ -1,0 +1,164 @@
+.freeTechSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 180px;
+}
+
+.freeTechLearning {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5625rem;
+}
+
+.freeTechLearningContainer {
+  max-width: 568px;
+  min-height: 436px;
+}
+
+.freeTechLearningText {
+  display: flex;
+  background-color: #add1fb;
+  max-width: 373px;
+  min-height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.techTools {
+  display: flex;
+  font-family: Cascadia Code;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: left;
+  color: #000000;
+}
+
+.techToolsParagraph {
+  display: flex;
+  color: #3d4f60;
+  font-family: Cascadia Code;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+}
+
+.freeResources {
+  align-items: center;
+  display: flex;
+  bottom: 0;
+  color: #487dc0;
+  font-family: Cascadia Code;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27.2px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.backArrow img {
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.backArrow a {
+  text-decoration: none;
+  font-family: Cascadia Code;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27.2px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.Resource {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 24px 0px 0px 0px;
+  object-fit: cover; /* Ensures the image fits nicely without distortion */
+}
+
+/* Responsive design for screens between 768px and 1199px */
+@media (max-width: 1199px) and (min-width: 769px) {
+  .freeTechSection {
+    margin: 0 40px; /* Reduce overall margin */
+  }
+
+  .freeTechLearning {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Reduce gap for better spacing */
+  }
+
+  .freeTechLearningContainer {
+    max-width: 100%; /* Expand container to take full width */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .freeTechLearningText {
+    max-width: 100%; /* Allow text box to stretch fully */
+    font-size: 18px; /* Slightly smaller font size */
+    padding: 10px;
+  }
+
+  .techTools {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .techToolsParagraph {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .Resource {
+    max-width: 80%; /* Limit image width for better alignment */
+    border-radius: 16px; /* Adjust border radius for this size */
+  }
+}
+
+/* Existing styles for smaller screens (below 768px) */
+@media (max-width: 768px) {
+  .freeTechSection {
+    margin: 0 20px; /* Reduced margin on smaller screens */
+  }
+
+  .freeTechLearning {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .freeTechLearningContainer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .Resource {
+    max-width: 90%; /* Image takes up 90% of the container width */
+    border-radius: 12px; /* Smaller border radius for compact screens */
+  }
+
+  .freeTechLearningText {
+    max-width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .techTools {
+    font-size: 18px; /* Adjust font size */
+    line-height: 30px;
+  }
+
+  .techToolsParagraph {
+    font-size: 16px; /* Adjust font size */
+    line-height: 24px;
+  }
+}
